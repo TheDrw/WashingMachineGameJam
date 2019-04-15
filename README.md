@@ -4,7 +4,7 @@
 
 ## Things
 This is game was made by [Jessie](https://github.com/JurassicJessie "3D Modeler") 
-and I, where Jessie is the novice 3D Modeler, and I was/is/something the programmer.
+and I, where Jessie is the novice 3D Modeler, and I was/is/something the programmerish.
 I used the game engine Unity version 2017.4.18f1. The code is in C#.
 I've decided to put all of the code and stuff on here, so someone who is learning to build a game from scratch, you can see how I approached it. Keep in mind, this was done in 2 days. I tried to stick to [SOLID](https://youtu.be/eIf3-aDTOOA) and best practices as much as I could. But I think I went off those rails early on.
 
@@ -21,7 +21,7 @@ You hold key 'z' down to initially get an item, and then to throw the item, you 
 I use Unity Camera Asset, CCTV, to follow the mouse movement smoothly. For level transitions between scenes, I used the tutorial [Makin' Stuff Look Good](https://www.youtube.com/watch?v=LnAoD7hgDxw). You can check out how I connected it into the game in the [TransitionsManager](https://github.com/TheDrw/WashingMachineGameJam/tree/master/WashingMachineGameJam/Assets/Camera). I used a free skybox asset from [Boxophobic](https://assetstore.unity.com/publishers/20529). The font is [BradBunR](https://github.com/TheDrw/WashingMachineGameJam/tree/master/WashingMachineGameJam/Assets/Core/Font). And that's all I think at the moment.
 
 ## Unity Concepts I implement That Might Be Useful For The Novice
-* **Folder organization**. I think this is the most over looked concept. For the most part, I like having my files separated by their general abstract representation in the game. You can take a [look](/WashingMachineGameJam/Assets/) to get a general sense of what I mean. I follow it for the most part. I see people making files like scripts, prefabs, etc, but personally, I don't like that because there's already a [search by type](https://docs.unity3d.com/Manual/ProjectView.html) function in the project window that does that for you. It also follows my namespace convention, so I know what dependencies I am importing when coding.
+* **Folder organization**. I think this is the most over looked concept. For the most part, I like having my files separated by their general abstract representation in the game. You can take a [look](/WashingMachineGameJam/Assets/) to get a general sense of what I mean. I follow it for the most part. I see people making files like scripts, prefabs, etc, on the assets folder, but personally, I don't like that because there's already a [search by type](https://docs.unity3d.com/Manual/ProjectView.html) function in the project window that does that for you if you need to see files by types. It also follows my namespace convention, so I know what dependencies I am importing when coding.
 
 * **Presistent Game Objects**. There are objects I don't [destroy on load](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html), and they are loaded in the \_PRELOAD scene and live throughout the game once started. They are the [LevelSelectorManager](/WashingMachineGameJam/Assets/Core/LevelSelect/), 
 [SoundManager](/WashingMachineGameJam/Assets/Core/Sound/), 
