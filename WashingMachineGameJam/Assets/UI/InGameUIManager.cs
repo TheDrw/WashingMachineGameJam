@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using GameJam.GameConstants;
+using GameJam.Utility;
 using GameJam.Core;
 using System.Collections;
 
@@ -16,7 +16,8 @@ namespace GameJam.UI
         [SerializeField]
         private GameObject EndPanel;
 
-        private bool isGameActive;
+        private bool isGameActive = false;
+        private bool isGameFinished = false;
 
         private void Start()
         {
@@ -26,21 +27,28 @@ namespace GameJam.UI
 
         private void Update()
         {
-            if (!isGameActive) return;
+            if (isGameActive)
+            {
+                ShowPausePanel();
+            }
+        }
 
-            if(Input.GetButtonDown(Constants.CANCEL))
+
+        private void OnDisable()
+        {
+            Countdown.OnGameStart -= GameStart;
+            Timer.OnGameFinished -= GameEnd;
+        }
+
+        private void ShowPausePanel()
+        {
+            if (Input.GetButtonDown(GameConstants.CANCEL))
             {
                 if (!PausePanel.activeSelf)
                 {
                     PausePanel.SetActive(true);
                 }
             }
-        }
-
-        private void OnDisable()
-        {
-            Countdown.OnGameStart -= GameStart;
-            Timer.OnGameFinished -= GameEnd;
         }
 
         private void GameStart()
@@ -51,12 +59,13 @@ namespace GameJam.UI
         private void GameEnd()
         {
             isGameActive = false;
+            isGameFinished = true;
             StartCoroutine(DelayEndPanel());
         }
 
         IEnumerator DelayEndPanel()
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(3.1f);
             EndPanel.SetActive(true);
         }
 
@@ -67,15 +76,25 @@ namespace GameJam.UI
 
         public void ReturnToMainMenu()
         {
+            InGamePanel.SetActive(false);
             PausePanel.SetActive(false);
             EndPanel.SetActive(false);
-            LevelSelectManager.LevelSelect.ReturnToMainMenu();   
+
+            if (LevelSelectManager.LevelSelect)
+            {
+                LevelSelectManager.LevelSelect.ReturnToMainMenu();
+            }
         }
 
         public void Retry()
         {
+            InGamePanel.SetActive(false);
             EndPanel.SetActive(false);
-            LevelSelectManager.LevelSelect.RestartLevel();
+
+            if(LevelSelectManager.LevelSelect)
+            {
+                LevelSelectManager.LevelSelect.RestartLevel();
+            }
         }
     }
 }

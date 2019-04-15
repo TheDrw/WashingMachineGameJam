@@ -8,7 +8,7 @@ namespace GameJam.Interactables
 
         private void Update()
         {
-            float zDegreesPerFrame = zRotationsPerMinute;
+            float zDegreesPerFrame = zRotationsPerMinute * Time.deltaTime;
             transform.RotateAround(transform.position, transform.forward, zDegreesPerFrame);
         }
     }

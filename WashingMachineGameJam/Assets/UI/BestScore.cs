@@ -11,14 +11,14 @@ namespace GameJam.UI
         private void OnEnable()
         {
             scoreText = GetComponent<Text>();
-            var score = PlayerPrefs.GetInt(GameConstants.Constants.SAVE_SCORE);
+            var score = PlayerPrefs.GetInt(Utility.GameConstants.SAVE_SCORE);
             if(score == 0)
             {
                 scoreText.text = "";
                 return;
             }
 
-            scoreText.text = "Best: " + PlayerPrefs.GetInt(GameConstants.Constants.SAVE_SCORE).ToString();
+            scoreText.text = "Best: " + PlayerPrefs.GetInt(Utility.GameConstants.SAVE_SCORE).ToString();
         }
     }
 }

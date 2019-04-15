@@ -176,7 +176,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf2f12250da55b4ab5a747d0526b7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsLaundryValid: 1
-  IsBeingThrown: 0
-  IsActive: 0
-  Points: 200
+  itemConfig: {fileID: 11400000, guid: 301042e3776f3e34893b2331f367cca6, type: 2}

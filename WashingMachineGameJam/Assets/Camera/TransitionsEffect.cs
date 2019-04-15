@@ -11,8 +11,8 @@ namespace GameJam.Camera
         readonly string FADE = "_Fade";
         readonly string CUTOFF = "_Cutoff";
         readonly string TEXTURE = "_TransitionTex";
-        float fadeSpeed = 10f;
-        float cutoffSpeed = 10f;
+        float fadeSpeed = 30f;
+        float cutoffSpeed = 30f;
 
         private void OnEnable()
         {

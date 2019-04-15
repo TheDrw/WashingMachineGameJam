@@ -22,8 +22,7 @@ namespace GameJam.UI
             scoreText.text = "";
             Countdown.OnGameStart += ShowScore;
             Timer.OnGameFinished += RecordScore;
-            Goal.OnValidItemInGoal += UpdateScore;
-            Goal.OnInvalidItemInGoal += UpdateScore;
+            Goal.OnItemInGoal += UpdateScore;
         }
 
         private void ShowScore()
@@ -37,11 +36,14 @@ namespace GameJam.UI
             scoreText.text = currentScore.ToString(FORMAT);
         }
 
+        // while playerprefs is nice and easy, i wouldn't use it for an actual game.
+        // score can be accessd easily and changed on client side.
+        // so this is cheating prone. good enough for a game jam
         private void RecordScore()
         {
-            var currentHighScore = PlayerPrefs.GetInt(GameConstants.Constants.SAVE_SCORE);
+            var currentHighScore = PlayerPrefs.GetInt(Utility.GameConstants.SAVE_SCORE);
             currentHighScore = currentScore > currentHighScore ? currentScore : currentHighScore;
-            PlayerPrefs.SetInt(GameConstants.Constants.SAVE_SCORE, currentHighScore);
+            PlayerPrefs.SetInt(Utility.GameConstants.SAVE_SCORE, currentHighScore);
             PlayerPrefs.Save();
         }
 
@@ -49,8 +51,7 @@ namespace GameJam.UI
         {
             Countdown.OnGameStart -= ShowScore;
             Timer.OnGameFinished -= RecordScore;
-            Goal.OnValidItemInGoal -= UpdateScore;
-            Goal.OnInvalidItemInGoal -= UpdateScore;
+            Goal.OnItemInGoal -= UpdateScore;
         }
     }
 }

@@ -14,4 +14,6 @@ MonoBehaviour:
   itemPrefab: {fileID: 1760079472404276, guid: 63872d89252e3c347b4fb6f28b13949c, type: 2}
   isLaundryValid: 0
   points: 40
-  itemSound: {fileID: 0}
+  itemGoalSound: {fileID: 8300000, guid: 10a452374581cc34399ba00d5263c78d, type: 3}
+  itemCollisionSound: {fileID: 8300000, guid: 194a591deeac01746af1b2d176e99ede, type: 3}
+  itemThrowSound: {fileID: 8300000, guid: c4d52d437930b604aa4dcef8587987f7, type: 3}

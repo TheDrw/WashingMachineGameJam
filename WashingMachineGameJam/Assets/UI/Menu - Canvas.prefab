@@ -458,7 +458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1899426337770806
 GameObject:
   m_ObjectHideFlags: 1
@@ -669,10 +669,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 20fc390f5daa26f4aa647c14826ea7d0, type: 3}
-    m_FontSize: 64
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 5
     m_MaxSize: 64
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Programmer/Developer Person Andrew Esberto
+  m_Text: Programmer/Developer Personish -Andrew Esberto-
 --- !u!114 &114167656835005400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -795,7 +795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Actual Noob 3D Modeler Jessica Swindle
+  m_Text: Actual Noob 3D Modeler -Jessica Swindle-
 --- !u!114 &114171830989055602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -860,7 +860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -869,18 +869,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 20fc390f5daa26f4aa647c14826ea7d0, type: 3}
-    m_FontSize: 86
+    m_FontSize: 96
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 86
+    m_MinSize: 1
+    m_MaxSize: 111
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Tossin' a Laundry
+    m_LineSpacing: 0.5
+  m_Text: "TOSS\n N'\nWASH"
 --- !u!114 &114218495995166892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -968,9 +968,9 @@ MonoBehaviour:
   m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 1}
-  m_EffectDistance: {x: 3.96, y: -5.22}
-  m_UseGraphicAlpha: 1
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5.72, y: -8}
+  m_UseGraphicAlpha: 0
 --- !u!114 &114378220771608646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1269,7 +1269,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Other: Skybox - Boxophobic, \nScene Transition Shader - Makin Stuff Look
-    Good\npizza, Mathematics, Compooters, Unity4d"
+    Good,\nfont(BradBunR) - Adam Nerland, pizza, Mathematics, Compooters, Unity69d"
 --- !u!114 &114553920168794478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1423,7 +1423,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 20fc390f5daa26f4aa647c14826ea7d0, type: 3}
-    m_FontSize: 60
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1494,10 +1494,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 20fc390f5daa26f4aa647c14826ea7d0, type: 3}
-    m_FontSize: 64
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 5
     m_MaxSize: 64
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1593,10 +1593,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 20fc390f5daa26f4aa647c14826ea7d0, type: 3}
-    m_FontSize: 64
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 5
     m_MaxSize: 64
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1894,7 +1894,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -128, y: 96}
-  m_SizeDelta: {x: 150, y: 90}
+  m_SizeDelta: {x: 137.8, y: 80.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224108015553026836
 RectTransform:
@@ -2025,7 +2025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -138}
+  m_AnchoredPosition: {x: 0, y: -98}
   m_SizeDelta: {x: 366.18, y: 261.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224388103704784528
@@ -2294,7 +2294,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 649.1, y: 440}
+  m_SizeDelta: {x: 600, y: 361.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224811465567380182
 RectTransform:
@@ -2330,8 +2330,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -40, y: -41}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: -30, y: -30}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224871692752698992
 RectTransform:
@@ -2347,10 +2347,10 @@ RectTransform:
   m_Father: {fileID: 224805860673143762}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -204, y: -344}
-  m_SizeDelta: {x: 150, y: 90}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 128, y: 96}
+  m_SizeDelta: {x: 137.8, y: 80.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224901727460933920
 RectTransform:
@@ -2386,6 +2386,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -59.76}
-  m_SizeDelta: {x: 613.99, y: 162.8}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: 249.4, y: 292.8}
   m_Pivot: {x: 0.5, y: 0.5}

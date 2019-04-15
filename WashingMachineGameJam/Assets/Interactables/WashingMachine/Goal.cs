@@ -5,28 +5,20 @@ namespace GameJam.Interactables
 {
     public class Goal : MonoBehaviour
     {
-        public static event Action<int> OnValidItemInGoal = delegate { };
-        public static event Action<int> OnInvalidItemInGoal = delegate { };
+        public static event Action<int> OnItemInGoal = delegate { };
 
         private void OnCollisionEnter(Collision collision)
         {
-            ItemInfo itemInfo = collision.gameObject.GetComponent<ItemInfo>();
-            if(itemInfo != null)
+            var item = collision.gameObject.GetComponent<ICollectable>();
+            if(item != null)
             {
-                CheckItemInGoal(itemInfo);
+                CheckItemInGoal(item);
             }
         }
 
-        private void CheckItemInGoal(ItemInfo itemInfo)
+        private void CheckItemInGoal(ICollectable item)
         {
-            if (itemInfo.IsLaundryValid)
-            {
-                OnValidItemInGoal(itemInfo.Points);
-            }
-            else
-            {
-                OnInvalidItemInGoal(itemInfo.Points);
-            }
+            OnItemInGoal(item.CollectPoints);
         }
     }
 }

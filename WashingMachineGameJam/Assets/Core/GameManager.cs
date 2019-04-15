@@ -18,7 +18,7 @@ namespace GameJam.Core
             //Cursor.lockState = CursorLockMode.None;
             Cursor.visible = false;
 
-            Application.targetFrameRate = 144;
+            //Application.targetFrameRate = -1;
         }
 
     }

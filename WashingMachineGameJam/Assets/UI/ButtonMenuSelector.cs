@@ -1,10 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using GameJam.GameConstants;
-
+using GameJam.Utility;
 
 namespace GameJam.UI
 {
@@ -18,6 +16,8 @@ namespace GameJam.UI
 
         [SerializeField]
         private Button backButton;
+
+        private GameObject previousButton;
 
         private void Start()
         {
@@ -34,12 +34,32 @@ namespace GameJam.UI
 
         private void Update()
         {
-            if(backButton != null)
+            ButtonHighlightChecker();
+            BackButtonChecker();
+        }
+
+        private void BackButtonChecker()
+        {
+            if (backButton != null)
             {
-                if(Input.GetButtonDown(Constants.CANCEL))
+                if (Input.GetButtonDown(GameConstants.CANCEL))
                 {
                     backButton.onClick.Invoke();
                 }
+            }
+        }
+
+        // when clicking on the screen if UI is up, the eventsystem will lose focus on that gameobject
+        // this will ensure if you click on screen, you will always keep focus on the gameobject.
+        private void ButtonHighlightChecker()
+        {
+            if (EventSystem.current.currentSelectedGameObject == null)
+            {
+                EventSystem.current.SetSelectedGameObject(previousButton);
+            }
+            else
+            {
+                previousButton = EventSystem.current.currentSelectedGameObject;
             }
         }
 
