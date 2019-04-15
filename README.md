@@ -46,6 +46,8 @@ Each item has [ItemConfig](/WashingMachineGameJam/Assets/Interactables/ItemConfi
 
 * Saving score. I used the fast and easy PlayerPrefs. I think it's good for small and unimportant stuff or early prototypes, but I would advise not to use it for your real game if you're saving crucial data. I'd suggest using something that will save and encrypt your data in some way at the least. You can [read this from unity](https://unity3d.com/learn/tutorials/topics/scripting/introduction-saving-and-loading). Or if you're like me and don't know how to read, [this video works](https://youtu.be/eUSpGUeqYn8).
 
+* Some things I did past the deadline was add music, sounds, finished the game over menu UI, and switched my old camera to the CCTV asset to get smoothing in the direction of cursor. I messed around with throw controller to fix things. And I think I did some architecture changes. I probably did some more minor things, but I can't remember at the moment.
+
 ## License Stuff
 [MIT LICENSE](/LICENSE). You can do whatever you want with this. You can sell it for a million bitcoins and not give me a single dogecoin. Just remember...[REMEMBER ME](https://youtu.be/AYURxfaTdpY "Bender - Remember Me").
 
