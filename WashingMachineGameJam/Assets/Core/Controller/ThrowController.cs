@@ -107,7 +107,7 @@ namespace GameJam.Controller
         // this is designed so even the slightest flick will throw the object at a decent range.
         private void Throw()
         {
-            StopAllCoroutines();
+            //StopAllCoroutines();
             if (item != null)
             {
                 // because unity truncates small numbers past a certain decimal pt when doing calculations, you have to multiply it to get those numbers.
