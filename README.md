@@ -4,7 +4,7 @@
 
 ## Things
 This is game was made by [Jessie](https://github.com/JurassicJessie "3D Modeler") 
-and I, where Jessie was the 3D Modeler, and I was/is/something the programmer.
+and I, where Jessie is the novice 3D Modeler, and I was/is/something the programmer.
 I used the game engine Unity version 2017.4.18f1. The code is in C#.
 I've decided to put all of the code and stuff on here, so someone who is learning to build a game from scratch, you can see how I approached it. Keep in mind, this was done in 2 days. I tried to stick to [SOLID](https://youtu.be/eIf3-aDTOOA) and best practices as much as I could. But I think I went off those rails early on.
 
