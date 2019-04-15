@@ -41,6 +41,8 @@ Each item has [ItemConfig](/WashingMachineGameJam/Assets/Interactables/ItemConfi
 
 * The [ThrowController](/WashingMachineGameJam/Assets/Core/Controller/ThrowController.cs) is okay. I think I could use a scriptable object called controller or abstract it. I could have a StandaloneInput, ControllerInput, or MobileInput where the controller reads from one of those input. So then if I were to extend it beyond being the mouse and keyboard, I could do it "_easily_". 
 
+* Saving score. I used the fast and easy PlayerPrefs. I think it's good for small and unimportant stuff or early prototypes, but I would advise not to use it for your real game if you're saving crucial data. I'd suggest using something that will save and encrypt your data in some way at the least. You can [read this from unity](https://unity3d.com/learn/tutorials/topics/scripting/introduction-saving-and-loading). Or if you're like me and don't know how to read, [this video works](https://youtu.be/eUSpGUeqYn8).
+
 ### License Stuff
 [MIT LICENSE](/LICENSE). You can do whatever you want with this. You can sell it for a million bitcoins and not give me a single dogecoin. Just remember...[REMEMBER ME](https://youtu.be/AYURxfaTdpY "Bender - Remember Me").
 
