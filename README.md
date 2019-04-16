@@ -35,14 +35,14 @@ Each item has [ItemConfig](/WashingMachineGameJam/Assets/Interactables/ItemConfi
 * **Action Events**. These are great. I use them a lot in UI such as the [Timer](/WashingMachineGameJam/Assets/UI/Timer.cs) and the [Countdown](/WashingMachineGameJam/Assets/UI/Countdown.cs). If you don't know much about them, [this guy is great](https://youtu.be/Jrwr6Yk_044). This is also known as the [observer pattern](https://youtu.be/Yy7Dt2usGy0).
 
 ## Bugs
-* When throwing the object, it is possible the item doesn't register the amount of "throw" needed. I didn't really test this extensively, but it works as a standalone 8/10 on my friends computers and in the editor on my computer 9/10. My guess it is a input by frame issue, or something about my pr0 gam3r mouse's input rate.
+* When throwing the object, it is possible the item doesn't register the amount of "throw" needed. I didn't really test this extensively, but it works as a standalone 8/10 on my friends computers and in the editor on my computer 9/10. But on standalone on my computer, it throwing works like 1/10 of the time. My guess it is a input by frame issue, or something about my pr0 gam3r mouse's input rate.
 
 * There are probably exponentially more bugs, but I ain't got time fo' dat. 
 
 ## Notes
 * This was made in 2 days, so I made a lot of weird decisions on things.
 
-* The [ThrowController](/WashingMachineGameJam/Assets/Core/Controller/ThrowController.cs) is okay. I think I could use a scriptable object called controller or abstract it. Then I could have something like KeyboardMouseInput, GameInput, or MobileInput where the controller reads from one of those input. So then if I were to extend it beyond the mouse and keyboard, I could do it "_easily_". At the moment, the ThrowController is hard stuck on only keyboard and mouse, which is fine if you want that only. I actually was initially gonna gamepad and extend it to mobile, but I got stuck on stupid things, so I made stupid decisions. 
+* The [ThrowController](/WashingMachineGameJam/Assets/Core/Controller/ThrowController.cs) is okay. I think I could use a scriptable object called controller or abstract it. Then I could have something like KeyboardMouseInput, GameInput, or MobileInput where the controller reads from one of those input. So then if I were to extend it beyond the mouse and keyboard, I could do it "_easily_". At the moment, the ThrowController is hard stuck on only keyboard and mouse, which is fine if you want that only. I actually was initially going to be using the gamepad and extend it to mobile swipe touch stuff, but I got stuck on stupid things, so I made stupid decisions. 
 
 * Saving score. I used the fast and easy PlayerPrefs. I think it's good for small and unimportant stuff or early prototypes, but I would advise not to use it for your real game if you're saving crucial data. I'd suggest using something that will save and encrypt your data in some way at the least. You can [read this from unity](https://unity3d.com/learn/tutorials/topics/scripting/introduction-saving-and-loading). Or if you're like me and don't know how to read, [this video works](https://youtu.be/eUSpGUeqYn8).
 
